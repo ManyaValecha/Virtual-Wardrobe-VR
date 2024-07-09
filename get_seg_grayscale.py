@@ -16,29 +16,29 @@ for y_idx in range(img.shape[0]):
         if np.array_equal(tmp, [0,0,0]):
             gray_img[y_idx][x_idx] = 0
         if np.array_equal(tmp, [255,0,0]):
-            gray_img[y_idx][x_idx] = 2 #머리카락
+            gray_img[y_idx][x_idx] = 2 
         elif np.array_equal(tmp, [0,0,255]):
-            gray_img[y_idx][x_idx] = 13 #머리
+            gray_img[y_idx][x_idx] = 13 
         elif np.array_equal(tmp, [85, 51, 0]):
-            gray_img[y_idx][x_idx] = 10 #목
+            gray_img[y_idx][x_idx] = 10 
         elif np.array_equal(tmp, [255, 85, 0]):
-            gray_img[y_idx][x_idx] = 5 #몸통
+            gray_img[y_idx][x_idx] = 5 
         elif np.array_equal(tmp, [0, 255, 255]):
-            gray_img[y_idx][x_idx] = 15 #왼팔
+            gray_img[y_idx][x_idx] = 15 
         elif np.array_equal(tmp, [51, 170, 221]):
-            gray_img[y_idx][x_idx] = 14 #오른팔
+            gray_img[y_idx][x_idx] = 14 
         elif np.array_equal(tmp, [0, 85, 85]):
-            gray_img[y_idx][x_idx] = 9 #바지
+            gray_img[y_idx][x_idx] = 9
         elif np.array_equal(tmp, [0, 0, 85]):
-            gray_img[y_idx][x_idx] = 6 #원피스
+            gray_img[y_idx][x_idx] = 6 
         elif np.array_equal(tmp, [0, 128, 0]):
-            gray_img[y_idx][x_idx] = 12 #치마
+            gray_img[y_idx][x_idx] = 12 
         elif np.array_equal(tmp, [177, 255, 85]):
-            gray_img[y_idx][x_idx] = 17 #왼다리
+            gray_img[y_idx][x_idx] = 17
         elif np.array_equal(tmp, [85, 255, 170]):
-            gray_img[y_idx][x_idx] = 16 #오른다리
+            gray_img[y_idx][x_idx] = 16 
         elif np.array_equal(tmp, [0, 119, 221]):
-            gray_img[y_idx][x_idx] = 5 #외투
+            gray_img[y_idx][x_idx] = 5 
         else:
             gray_img[y_idx][x_idx] = 0
             
